@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" href="css/slicknav.min.css"/>
+<link rel="stylesheet" type="text/css" href="poubelle.css">
+
+<head>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="poubelle.css">
+    <script src="style.js"></script>
+    <script src="exec.js"></script>
+</head>
+<body>
+
+<button class="btn btn-outline-danger" id="logout" style="position: absolute; top: 50px; right: 50px;">logout</button>
+
+<div class="login-reg-panel" id="connected" style="display: none;">
+
+
+    <div class="register-info-box">
+        <h3>List of users</h3>
+        <ul id="people">
+        </ul>
+    </div>
+
+    <div class="white-panel">
+        <div class="register-show">
+            <h4 class= "groups" id="adminconnected">It seems like something went wrong...</h4> <br>
+            <ul class= "groups" id="list">
+
+            </ul>
+        </div>
+        <div class="retour">
+            <h4><a href="userpage.html">Retour à l'accueil</a></h4>
+        </div>
+    </div>
+</div>
+<div id="notconnected" style="display: inline-block;">
+    <h3>You're not connected, you can create an account <a href="register.html">right here</a>.</h3>
+</div>
+</body>
