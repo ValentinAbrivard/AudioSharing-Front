@@ -19,6 +19,7 @@ function createUser()   {
 
             success: function(data){
                 console.log("success" + data);
+                window.location.href = "../loginPage/login.html";
             },
             error: function(e) {
                 //alert("THe username you want to use is already taken");
