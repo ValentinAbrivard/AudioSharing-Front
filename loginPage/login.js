@@ -1,4 +1,6 @@
+
 //event that login a user by checking credentials in the db and then redirect to the userpage
+
 $("#connect").submit(function(e)  {
     e.preventDefault();
     console.log("click");
