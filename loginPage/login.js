@@ -29,9 +29,12 @@ function getUser()   {
             var id = tab[0];
             var compteRecup = tab[1];
             console.log(tab);
+            console.log(data);
+            console.log("data id : " +data._id);
+            
 
-            sessionStorage.setItem("userconnected", compteRecup);
-            sessionStorage.setItem("userid", id);
+            sessionStorage.setItem("userconnected", data.nomdecompte);
+            sessionStorage.setItem("userid", data._id);
             createtokenforuser();
             // window.location.href = "../indexPage/index.html";
         },
