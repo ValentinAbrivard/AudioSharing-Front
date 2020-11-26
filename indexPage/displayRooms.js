@@ -1,34 +1,40 @@
+//import { createApp } from 'vue'
+//import App from '../src/App.vue'
+//import './index.css'
+//import Room from '../src/Room.vue'
 
-/*<!-- Portfolio Item 3-->
-<div class="col-md-6 col-lg-4 mb-5">
-    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-        </div>
-        <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="" />
-    </div>
-</div>*/
+//createApp(App).mount('#app')
+//createApp(Room).mount('#room')
+
+import { createApp } from 'vue'
+                import '../src/index.css'
+                import Room from '../src/Room.vue'
 
 
-
-/*window.onload = (function() {
+window.onload = (function() {
     var settings = {
         "url": "http://127.0.0.1:3000/room",
         "method": "GET"
     };
     $.ajax(settings).done(function (response){
+        var roomCount = 0
         for(let i = 0; i < response.length; i++) {
             console.log("test");
             console.log(response[i].live)
             if(response[i].live == false) {
                 console.log("inside if");
-                $("#roomsDisplay").append("<div id=" + "room" + "></div>");
+                roomCount = roomCount + 1;
+                console.log(roomCount);
+                $("#roomsDisplay").append("<div id=" + "room" + roomCount + "></div>");
+                
+                
+                createApp(Room).mount('#room' + roomCount);
 
 
-                $("#people").append("<li>" + "test" + "</li>"); 
+                //$("#people").append("<li>" + "test" + "</li>"); 
             }else {
                 //console.log("Le live de : " + response[i].nomderoom + " n'a pas commencé");
             }
         }
     })
-})*/
+})
