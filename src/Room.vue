@@ -10,12 +10,5 @@
 </template>
 
 <script>
-import Room from './components/rooms.vue'
 
-export default {
-  name: 'App',
-  components: {
-    Room
-  }
-}
 </script>
