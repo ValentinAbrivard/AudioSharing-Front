@@ -3,6 +3,13 @@ Welcome to out project.
 
 Technical part : 
 
-Run backend : docker-compose up 
-Run frontend : npm run dev 
-Run socket.io : node index.js
+Back-end : https://github.com/ValentinAbrivard/AudioSharing-Back
+
+Frontend : https://github.com/ValentinAbrivard/AudioSharing-Front
+
+Open 2 terminal :
+ - one in the Front-nuxt folder (and follow the readme in this folder)
+ - one in the test-socketio folder
+
+For the terminal in test-socketio, just run :
+ node index.js
