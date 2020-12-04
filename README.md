@@ -14,3 +14,7 @@ Open 2 terminal :
 
 For the terminal in test-socketio, just run :
  node index.js
+
+
+
+Si vous avez un problème pour lancer le projet ou autre n'hésitez pas à mon contacter sur Team ou sur mon email : v.abrivard@ecole-ipssi.net
